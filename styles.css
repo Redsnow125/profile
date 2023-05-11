@@ -1,0 +1,66 @@
+:root{
+    /* colors */
+    --blue: #335C67;
+    --cream: #FFF3B0;
+    --gold: #E09F3E;
+    --red: #9E2A2B;
+    --maroon: #540B0E;
+    /* measurements */
+    --header-height: 100px;
+    --main-height: calc(100vh - var(--header-height));
+}
+
+header{
+    height: var(--header-height);
+    background-color: var(--maroon);
+    color: var(--gold);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+a{
+    color: var(--gold);
+}
+a:hover{
+    cursor: pointer;
+}
+h1{
+    font-size: 90px;
+}
+main{
+    height: var(--main-height);
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+section{
+    min-height: 100%;
+}
+h2{
+    font-size: 60px;
+    color: var(--maroon);
+}
+#me{
+    display: flex;
+    gap: 20px;
+}
+#me-pic{
+    width: var(--header-height);
+    height: var(--header-height);
+    border-radius: 50%;
+}
