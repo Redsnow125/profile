@@ -64,3 +64,11 @@ h2{
     height: var(--header-height);
     border-radius: 50%;
 }
+.maintxt{
+    font-size: 40px;
+    color: var(--gold);  
+}
+#email:hover{
+    cursor: pointer;
+}
+
