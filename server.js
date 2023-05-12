@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.static('public')) //The string in static() needs to be whatever your frontend folder is named.
 
 app.get('/', (req,res) => {
-  res.status(200).sendFile(path.join(__dirname, '[path to frontend html from server file]'))
+  res.status(200).sendFile(path.join(__dirname, './public/index.html'))
 })
 
 app.listen(4000, console.log(`App running on 4000`))
